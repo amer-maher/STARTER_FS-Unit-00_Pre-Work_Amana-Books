@@ -132,7 +132,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
           <button
             onClick={handleAddToCart}
             disabled={!book.inStock || isAddingToCart}
-            className={`flex-1 px-3 py-2 text-sm rounded-md transition-colors duration-200 ${
+            className={`flex-1 px-3 py-2 text-sm rounded-md transition-colors duration-400 ${
               !book.inStock
                 ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                 : showSuccess

@@ -9,5 +9,11 @@
 
 /* Ensure light background without conflicting with Tailwind */
 html {
-  background-color: #f9fafb;
+  background-color: #d0dbe6;
+}
+@layer utilities {
+  /* Apply when the button has class="transition-colors" */
+  button.transition-colors {
+    background-color: aquamarine;
+  }
 }
